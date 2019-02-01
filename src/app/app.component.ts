@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'mat2sidenav';
+
+  routes = [
+    { path: '/', name: 'Home' },
+    { path: 'one', name: 'One' },
+    { path: 'two', name: 'Two' },
+    { path: 'three', name: 'Three' }
+  ];
+
+  constructor() {
+  }
+
 }
